@@ -147,7 +147,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#3498db"
-                android:text="*" />
+                android:text="X" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -233,13 +233,27 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_00"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="00"
-                tools:text="00" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_bra_op"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="(" />
+
+                <Button
+                    android:id="@+id/btn_bra_cl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=")" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/btn_0"
@@ -269,28 +283,5 @@
 
     </LinearLayout>
 
-    <!--<LinearLayout
-        android:id="@+id/l3"
-        android:background="#3fa"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/l3_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/l3_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        </LinearLayout>
-    </LinearLayout>-->
 </LinearLayout>
